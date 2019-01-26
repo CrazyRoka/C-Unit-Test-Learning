@@ -9,14 +9,14 @@ namespace UnitTestingSamples.MSTests
     public class StringSampleTest
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void ConstructorShouldThrowOnNull()
         {
             var sample = new StringSample(null);
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void GetStringDemoThrowOnFirstNull()
         {
             var sample = new StringSample(String.Empty);
@@ -24,7 +24,7 @@ namespace UnitTestingSamples.MSTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void GetStringDemoThrowOnSecondNull()
         {
             var sample = new StringSample(String.Empty);

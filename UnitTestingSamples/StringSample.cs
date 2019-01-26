@@ -9,14 +9,15 @@ namespace UnitTestingSamples
         private string _init;
         public StringSample(string init)
         {
-            if (init is null) throw new ArgumentException(nameof(init));
+            if (init is null) throw new ArgumentNullException(nameof(init));
             _init = init;
         }
 
         public string GetStringDemo(string first, string second)
         {
+            if (first is null) throw new ArgumentNullException(nameof(first));
+            if (second is null) throw new ArgumentNullException(nameof(second));
             if (string.IsNullOrEmpty(first)) throw new ArgumentException(nameof(first));
-            if (second is null) throw new ArgumentException(nameof(second));
             if (second.Length > first.Length) throw new ArgumentException("second argument must not be larger then first");
             int startIndex = first.IndexOf(second);
             if (startIndex == -1) return $"{second} not found in {first}";
