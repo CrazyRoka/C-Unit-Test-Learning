@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingSamples", "UnitTestingSamples\UnitTestingSamples.csproj", "{85125164-EED4-42CB-AA57-CCD0A97832AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestingSamples", "UnitTestingSamples\UnitTestingSamples.csproj", "{85125164-EED4-42CB-AA57-CCD0A97832AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingSamples.MSTests", "UnitTestingSamples.MSTests\UnitTestingSamples.MSTests.csproj", "{583A1987-B3D3-4836-A337-507B6C66D0FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestingSamples.MSTests", "UnitTestingSamples.MSTests\UnitTestingSamples.MSTests.csproj", "{583A1987-B3D3-4836-A337-507B6C66D0FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingSamples.xUnit.Tests", "UnitTestingSamples.xUnit.Tests\UnitTestingSamples.xUnit.Tests.csproj", "{6E49EAD4-9351-4D43-84EF-005461BC0FA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestingSamples.xUnit.Tests", "UnitTestingSamples.xUnit.Tests\UnitTestingSamples.xUnit.Tests.csproj", "{6E49EAD4-9351-4D43-84EF-005461BC0FA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTestingSamples", "UnitTestingSamples", "{EA77E0EB-3206-479C-ADD1-CC4B0D4C8283}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MockingSamples", "MockingSamples", "{07ED7E39-48FC-404E-BB82-0407F00B91B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksLib", "BooksLib\BooksLib.csproj", "{024478B3-81A2-4CAF-ACEA-2E4097FC4518}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksLib.Tests", "BooksLib.Tests\BooksLib.Tests.csproj", "{469C9CA3-03F7-453D-9F03-4D8052755E33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,24 @@ Global
 		{6E49EAD4-9351-4D43-84EF-005461BC0FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E49EAD4-9351-4D43-84EF-005461BC0FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E49EAD4-9351-4D43-84EF-005461BC0FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024478B3-81A2-4CAF-ACEA-2E4097FC4518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024478B3-81A2-4CAF-ACEA-2E4097FC4518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024478B3-81A2-4CAF-ACEA-2E4097FC4518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024478B3-81A2-4CAF-ACEA-2E4097FC4518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469C9CA3-03F7-453D-9F03-4D8052755E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469C9CA3-03F7-453D-9F03-4D8052755E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469C9CA3-03F7-453D-9F03-4D8052755E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469C9CA3-03F7-453D-9F03-4D8052755E33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{85125164-EED4-42CB-AA57-CCD0A97832AA} = {EA77E0EB-3206-479C-ADD1-CC4B0D4C8283}
+		{583A1987-B3D3-4836-A337-507B6C66D0FC} = {EA77E0EB-3206-479C-ADD1-CC4B0D4C8283}
+		{6E49EAD4-9351-4D43-84EF-005461BC0FA3} = {EA77E0EB-3206-479C-ADD1-CC4B0D4C8283}
+		{024478B3-81A2-4CAF-ACEA-2E4097FC4518} = {07ED7E39-48FC-404E-BB82-0407F00B91B1}
+		{469C9CA3-03F7-453D-9F03-4D8052755E33} = {07ED7E39-48FC-404E-BB82-0407F00B91B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AFDC949-94F9-4F68-A2A9-19BD2013C395}
